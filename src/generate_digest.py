@@ -267,7 +267,7 @@ async def generate_digest():
         # ====================================================================
         logger.info("Generating output files")
         
-        output_dir = Path("docs")
+        output_dir = Path(__file__).parent.parent / "docs"
         output_dir.mkdir(exist_ok=True)
         
         # Save JSON

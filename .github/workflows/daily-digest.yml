@@ -43,7 +43,7 @@ jobs:
           python generate_digest.py
       
       - name: Disable Jekyll 
-        run: touch src/docs/.nojekyll 
+        run: touch docs/.nojekyll 
 
       - name: Commit and push updates
         run: |
