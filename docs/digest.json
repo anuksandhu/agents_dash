@@ -1,6 +1,178 @@
 {
   "date": "2025-12-02",
-  "generated_at": "2025-12-02T02:52:30.273689",
-  "sections": [],
-  "raw_response": "{\"date\": \"2025-12-02\", \"generated_at\": \"2025-12-02T02:52:24.361594\", \"sections\": [{\"data\": {\"current\": {\"description\": \"Clear sky\", \"feels_like\": 45.3, \"humidity\": 83, \"icon\": \"01n\", \"temp\": 47.9, \"wind_speed\": 5.8}, \"forecast\": [{\"date\": \"2025-12-02\", \"description\": \"Overcast clouds\", \"icon\": \"04n\", \"temp\": 46.4}, {\"date\": \"2025-12-03\", \"description\": \"Broken clouds\", \"icon\": \"04n\", \"temp\": 48.7}, {\"date\": \"2025-12-04\", \"description\": \"Overcast clouds\", \"icon\": \"04n\", \"temp\": 49.8}, {\"date\": \"2025-12-05\", \"description\": \"Broken clouds\", \"icon\": \"04n\", \"temp\": 50.8}, {\"date\": \"2025-12-06\", \"description\": \"Broken clouds\", \"icon\": \"04n\", \"temp\": 53.4}], \"location\": \"San Jose\", \"source\": \"OpenWeather API\", \"timestamp\": \"2025-12-02T02:52:24.241260\"}, \"name\": \"weather\", \"source\": \"OpenWeather API\", \"timestamp\": \"2025-12-02T02:52:24.241260\"}, {\"data\": {\"source\": \"Mock Sports Data (replace with The Sports DB or ESPN API)\", \"teams\": [{\"latest_game\": \"L 18-27 vs Packers (2025-11-29)\", \"league\": \"NFL\", \"name\": \"San Francisco 49ers\", \"next_game\": \"vs Packers on 2025-12-04\", \"record\": \"15-5\", \"standings\": \"#5 in division\"}, {\"latest_game\": \"W 26-18 vs Avalanche (2025-11-29)\", \"league\": \"NHL\", \"name\": \"San Jose Sharks\", \"next_game\": \"vs Canucks on 2025-12-06\", \"record\": \"13-6\", \"standings\": \"#8 in division\"}, {\"latest_game\": \"W 114-110 vs Clippers (2025-11-30)\", \"league\": \"NBA\", \"name\": \"Golden State Warriors\", \"next_game\": \"vs Clippers on 2025-12-03\", \"record\": \"6-12\", \"standings\": \"#8 in division\"}], \"timestamp\": \"2025-12-02T02:52:24.243974\"}, \"name\": \"sports\", \"source\": \"Mock Sports Data (replace with The Sports DB or ESPN API)\", \"timestamp\": \"2025-12-02T02:52:24.243974\"}, {\"data\": {\"articles\": [{\"category\": \"technology\", \"published_at\": \"2025-12-01T02:52:02Z\", \"source\": \"Ndtvprofit.com\", \"summary\": \"The GMP for the SME IPO of Exato Technologies has increased by more than 60% since November 24, when the grey market premium was Rs 80.\", \"title\": \"Exato Technologies IPO GMP Soars As Subscription Enters Second Day; Check Details\", \"url\": \"https://www.ndtvprofit.com/ipos/exato-technologies-ipo-gmp-soars-as-subscription-enters-second-day-check-details\"}, {\"category\": \"technology\", \"published_at\": \"2025-12-01T02:49:31Z\", \"source\": \"Biztoc.com\", \"summary\": \"{ window.open(this.href, \\'_blank\\'); }, 200); return false;\\\"&gt;Why did OPEC+ pause oil production hikes? { window.open(this.href, \\'_blank\\'); }, 200); return false;\\\"&gt;How will Trumps Fed chief pick \u2026\", \"title\": \"Asian stocks steady on Fed rate-cut optimism; yen firms\", \"url\": \"https://biztoc.com/x/8b0c2292df442290\"}, {\"category\": \"technology\", \"published_at\": \"2025-12-01T02:49:25Z\", \"source\": \"Biztoc.com\", \"summary\": \"{ window.open(this.href, \\'_blank\\'); }, 200); return false;\\\"&gt;Why did OPEC+ pause oil production hikes? { window.open(this.href, \\'_blank\\'); }, 200); return false;\\\"&gt;How will Trumps Fed chief pick \u2026\", \"title\": \"Zootopia 2 breaks records in China with $275 million opening\", \"url\": \"https://biztoc.com/x/8a878d2c5ab0964c\"}, {\"category\": \"technology\", \"published_at\": \"2025-12-01T02:49:09Z\", \"source\": \"The Times of India\", \"summary\": \"Meghalaya influencer Sweet Zannat faced a viral uproar after being mistakenly identified in a 19-minute video. Despite baseless accusations flooding her profile, Zannat calmly addressed the misinformation, pointing out the lack of resemblance and noting the u\u2026\", \"title\": \"Who is influencer Sweet Zannat and why is she being dragged into the viral 19-minute video controversy on social media?\", \"url\": \"https://economictimes.indiatimes.com/news/new-updates/who-is-influencer-sweet-zannat-and-why-is-she-being-dragged-into-the-viral-19-minute-video-controversy-on-social-media/articleshow/125683627.cms\"}, {\"category\": \"technology\", \"published_at\": \"2025-12-01T02:48:51Z\", \"source\": \"Pypi.org\", \"summary\": \"Python SDK for Agent Diff - test AI agents and train models against replicas of services\", \"title\": \"agent-diff 0.1.17\", \"url\": \"https://pypi.org/project/agent-diff/0.1.17/\"}], \"source\": \"News API\", \"timestamp\": \"2025-12-02T02:52:24.358898\"}, \"name\": \"tech\", \"source\": \"News API\", \"timestamp\": \"2025-12-02T02:52:24.358898\"}, {\"data\": {\"indexes\": [{\"change\": -88.03, \"change_percent\": -1.94, \"is_positive\": false, \"name\": \"S&P 500\", \"symbol\": \"^GSPC\", \"value\": 4537.83}, {\"change\": -97.11, \"change_percent\": -0.69, \"is_positive\": false, \"name\": \"NASDAQ\", \"symbol\": \"^IXIC\", \"value\": 13981.96}, {\"change\": 19.26, \"change_percent\": 0.06, \"is_positive\": true, \"name\": \"DOW JONES\", \"symbol\": \"^DJI\", \"value\": 35019.06}], \"market_summary\": \"Tech stocks led gains as the broader market advanced.\", \"source\": \"Mock Market Data (replace with Alpha Vantage or Yahoo Finance)\", \"timestamp\": \"2025-12-02T02:52:24.360769\"}, \"name\": \"market\", \"source\": \"Mock Market Data (replace with Alpha Vantage or Yahoo Finance)\", \"timestamp\": \"2025-12-02T02:52:24.360769\"}]}\n"
+  "generated_at": "2025-12-02T04:52:02.732893",
+  "sections": [
+    {
+      "name": "weather",
+      "data": {
+        "current": {
+          "description": "Mist",
+          "feels_like": 45.9,
+          "humidity": 83,
+          "icon": "50n",
+          "temp": 47,
+          "wind_speed": 3.4
+        },
+        "forecast": [
+          {
+            "date": "2025-12-02",
+            "description": "Broken clouds",
+            "icon": "04n",
+            "temp": 46.5
+          },
+          {
+            "date": "2025-12-03",
+            "description": "Broken clouds",
+            "icon": "04n",
+            "temp": 48.7
+          },
+          {
+            "date": "2025-12-04",
+            "description": "Overcast clouds",
+            "icon": "04n",
+            "temp": 49.8
+          },
+          {
+            "date": "2025-12-05",
+            "description": "Broken clouds",
+            "icon": "04n",
+            "temp": 50.8
+          },
+          {
+            "date": "2025-12-06",
+            "description": "Broken clouds",
+            "icon": "04n",
+            "temp": 53.4
+          }
+        ],
+        "location": "San Jose",
+        "source": "OpenWeather API",
+        "timestamp": "2025-12-02T04:52:02.476944"
+      },
+      "timestamp": "2025-12-02T04:52:02.476944",
+      "source": "OpenWeather API"
+    },
+    {
+      "name": "sports",
+      "data": {
+        "source": "Mock Sports Data (replace with The Sports DB or ESPN API)",
+        "teams": [
+          {
+            "latest_game": "W 22-16 vs Cardinals (2025-12-01)",
+            "league": "NFL",
+            "name": "San Francisco 49ers",
+            "next_game": "vs Seahawks on 2025-12-06",
+            "record": "15-8",
+            "standings": "#2 in division"
+          },
+          {
+            "latest_game": "W 24-19 vs Canucks (2025-11-30)",
+            "league": "NHL",
+            "name": "San Jose Sharks",
+            "next_game": "vs Canucks on 2025-12-04",
+            "record": "13-10",
+            "standings": "#2 in division"
+          },
+          {
+            "latest_game": "W 117-93 vs Kings (2025-11-29)",
+            "league": "NBA",
+            "name": "Golden State Warriors",
+            "next_game": "vs Clippers on 2025-12-05",
+            "record": "14-9",
+            "standings": "#4 in division"
+          }
+        ],
+        "timestamp": "2025-12-02T04:52:02.481105"
+      },
+      "timestamp": "2025-12-02T04:52:02.481105",
+      "source": "Mock Sports Data (replace with The Sports DB or ESPN API)"
+    },
+    {
+      "name": "tech",
+      "data": {
+        "articles": [
+          {
+            "category": "technology",
+            "published_at": "2025-12-01T04:51:52Z",
+            "source": "Biztoc.com",
+            "summary": "An outage at the world's biggest exchange operator, CME Group, has put a spotlight on data centers overheating.",
+            "title": "Keeping cool: heat a key challenge for data centers and AI",
+            "url": "https://biztoc.com/x/a31232e411dfc7f1"
+          },
+          {
+            "category": "technology",
+            "published_at": "2025-12-01T04:51:09Z",
+            "source": "Pypi.org",
+            "summary": "This package helps to abstract Gen Ai applications' observability using Langfuse.",
+            "title": "veriskgo 22.0.4",
+            "url": "https://pypi.org/project/veriskgo/22.0.4/"
+          },
+          {
+            "category": "technology",
+            "published_at": "2025-12-01T04:49:15Z",
+            "source": "The Indian Express",
+            "summary": "Gujarat Biotechnology University team to work on affordable, scalable and minimally invasive RNA-based diagnostic and therapeutic tools for HMB",
+            "title": "Gujarat biotech varsity\u2019s research on Heavy Menstrual Bleeding gets financial aid from Gates Foundation",
+            "url": "https://indianexpress.com/article/cities/ahmedabad/gujarat-biotech-varsitys-research-on-heavy-menstrual-bleeding-financial-aid-gates-foundation-10395259/"
+          },
+          {
+            "category": "technology",
+            "published_at": "2025-12-01T04:47:18Z",
+            "source": "The Times of India",
+            "summary": "Meesho\u2019s Rs 5,421-crore IPO is drawing strong interest, with GMP indicating a possible 40% listing premium. Backed by improving fundamentals, rising user growth, and a defensible value-ecommerce position, analysts see medium-term potential despite near-term p\u2026",
+            "title": "Meesho IPO: GMP hints at strong listing. Check price band, financials - Should you bid?",
+            "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/meesho-ipo-gmp-hints-at-strong-listing-check-price-band-financials-should-you-bid/articleshow/125685460.cms"
+          },
+          {
+            "category": "technology",
+            "published_at": "2025-12-01T04:45:07Z",
+            "source": "Pypi.org",
+            "summary": "This package helps to abstract Gen Ai applications' observability using Langfuse.",
+            "title": "veriskgo 22.0.3",
+            "url": "https://pypi.org/project/veriskgo/22.0.3/"
+          }
+        ],
+        "source": "News API",
+        "timestamp": "2025-12-02T04:52:02.729544"
+      },
+      "timestamp": "2025-12-02T04:52:02.729544",
+      "source": "News API"
+    },
+    {
+      "name": "market",
+      "data": {
+        "indexes": [
+          {
+            "change": -6.48,
+            "change_percent": -0.14,
+            "is_positive": false,
+            "name": "S&P 500",
+            "symbol": "^GSPC",
+            "value": 4523.76
+          },
+          {
+            "change": -27.41,
+            "change_percent": -0.2,
+            "is_positive": false,
+            "name": "NASDAQ",
+            "symbol": "^IXIC",
+            "value": 13955.15
+          },
+          {
+            "change": -6.86,
+            "change_percent": -0.02,
+            "is_positive": false,
+            "name": "DOW JONES",
+            "symbol": "^DJI",
+            "value": 34953.09
+          }
+        ],
+        "market_summary": "Tech stocks led gains as the broader market advanced.",
+        "source": "Mock Market Data (replace with Alpha Vantage or Yahoo Finance)",
+        "timestamp": "2025-12-02T04:52:02.731878"
+      },
+      "timestamp": "2025-12-02T04:52:02.731878",
+      "source": "Mock Market Data (replace with Alpha Vantage or Yahoo Finance)"
+    }
+  ]
 }
