@@ -112,40 +112,40 @@ async def generate_digest():
             
             OUTPUT FORMAT:
             Return a JSON object with this structure:
-            {
+            {{
                 "date": "YYYY-MM-DD",
                 "generated_at": "ISO timestamp",
                 "sections": [
-                    {
+                    {{
                         "name": "weather",
                         "data": <weather_tool_output>,
                         "timestamp": "ISO timestamp",
                         "source": "source name"
-                    },
-                    {
+                    }},
+                    {{
                         "name": "sports",
                         "data": <sports_tool_output>,
                         "timestamp": "ISO timestamp",
                         "source": "source name"
-                    },
-                    {
+                    }},
+                    {{
                         "name": "tech",
                         "data": <tech_tool_output>,
                         "timestamp": "ISO timestamp",
                         "source": "source name"
-                    },
-                    {
+                    }},
+                    {{
                         "name": "market",
                         "data": <market_tool_output>,
                         "timestamp": "ISO timestamp",
                         "source": "source name"
-                    }
+                    }}
                 ]
-            }
+            }}
             
             CRITICAL: Your response MUST be ONLY valid JSON in the exact format shown above. 
             Do NOT include any explanatory text. Do NOT use markdown code blocks.
-            Output ONLY the raw JSON object starting with { and ending with }.
+            Output ONLY the raw JSON object starting with {{ and ending with }}.
             """,
             tools=tools
         )
