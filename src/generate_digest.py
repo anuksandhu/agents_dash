@@ -4,6 +4,7 @@ Main entry point for generating the daily digest using Google ADK agents
 """
 
 import asyncio
+from asyncio.log import logger
 import json
 import sys
 from datetime import datetime
@@ -224,9 +225,11 @@ async def generate_digest():
         #response_text = response_text.replace("False", "false").replace("True", "true")  # ← ADD THIS LINE
         
         # Handle Python booleans - case insensitive
+        # Clean up the response
+        response_text = response_text.strip()  # Remove leading/trailing whitespace
         response_text = response_text.replace(": False", ": false").replace(": True", ": true")
         response_text = response_text.replace(":False", ":false").replace(":True", ":true")
-        
+
         logger.debug(f"Raw response: {response_text[:500]}...")
         
         # Try to extract JSON (agent might wrap it in markdown code blocks)
@@ -235,11 +238,18 @@ async def generate_digest():
             json_text = response_text.split("```json")[1].split("```")[0].strip()
         elif "```" in response_text:
             json_text = response_text.split("```")[1].split("```")[0].strip()
-        
+
+        # Additional cleanup for common JSON issues
+        json_text = json_text.strip()
+        # Remove any trailing newlines or extra characters after the closing brace
+        if json_text.endswith('\n'):
+            json_text = json_text.rstrip('\n')
+
         try:
             digest_data = json.loads(json_text)
-        except json.JSONDecodeError:
-            logger.warning("Failed to parse JSON, trying to extract from text")
+            logger.info("JSON parsed successfully")
+        except json.JSONDecodeError as e:
+            logger.warning(f"Failed to parse JSON: {e}, trying to extract from text")
             # If JSON parsing fails, create structure from raw text
             digest_data = {
                 "date": datetime.now().strftime('%Y-%m-%d'),
