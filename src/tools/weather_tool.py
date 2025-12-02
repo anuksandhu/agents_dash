@@ -32,7 +32,7 @@ def get_weather(location: str = None) -> Dict[str, Any]:
         Dictionary containing:
         - location: Location name
         - current: Current weather conditions (temp, feels_like, humidity, description, icon)
-        - forecast: 5-day forecast with daily summaries
+        - forecast: 5-day forecast with daily HIGH temperatures
         - timestamp: ISO format timestamp when data was fetched
         - source: Data source for validation
         - error: Error message if request failed
@@ -99,34 +99,58 @@ def get_weather(location: str = None) -> Dict[str, Any]:
             'source': 'OpenWeather API'
         }
         
-        # Process forecast (get one reading per day, at noon)
+        # Process forecast - get daily HIGH temperature
+        # OpenWeather returns forecasts every 3 hours (8 readings per day)
         seen_dates = set()
         for item in forecast_data['list']:
-            date_str = item['dt_txt'].split()[0]  # Get date part
+            date_str = item['dt_txt'].split()[0]  # Get date part (YYYY-MM-DD)
             
-            # Only take one reading per day (prefer around noon)
             if date_str not in seen_dates and len(result['forecast']) < 5:
-                hour = int(item['dt_txt'].split()[1].split(':')[0])
-                if hour >= 11 and hour <= 13:  # Noon reading
-                    seen_dates.add(date_str)
-                    result['forecast'].append({
-                        'date': date_str,
-                        'temp': round(item['main']['temp'], 1),
-                        'description': item['weather'][0]['description'].capitalize(),
-                        'icon': item['weather'][0]['icon']
-                    })
+                # Get ALL temperature readings for this day (scans all 3-hour intervals)
+                day_temps = [
+                    reading['main']['temp'] 
+                    for reading in forecast_data['list'] 
+                    if reading['dt_txt'].startswith(date_str)
+                ]
+                
+                # Find the maximum temperature for the day (daily HIGH)
+                max_temp = max(day_temps) if day_temps else item['main']['temp']
+                
+                # Get weather description from midday reading (most representative)
+                # This gives us the daytime conditions rather than night/early morning
+                midday_item = next(
+                    (r for r in forecast_data['list'] 
+                     if r['dt_txt'].startswith(date_str) and '12:00' in r['dt_txt']),
+                    item  # Fallback to first available if no noon reading
+                )
+                
+                seen_dates.add(date_str)
+                result['forecast'].append({
+                    'date': date_str,
+                    'temp': round(max_temp, 1),  # Daily HIGH temperature
+                    'description': midday_item['weather'][0]['description'].capitalize(),
+                    'icon': midday_item['weather'][0]['icon']
+                })
         
-        # If we didn't get 5 days (due to noon preference), fill with any available data
+        # If we didn't get 5 days yet, fill with any remaining available data
+        # This handles edge cases where forecast data might be incomplete
         if len(result['forecast']) < 5:
-            seen_dates.clear()
-            result['forecast'] = []
-            for item in forecast_data['list'][::8]:  # Every 8th entry (24 hours)
+            seen_dates_backup = set(f['date'] for f in result['forecast'])
+            for item in forecast_data['list'][::8]:  # Every 8th entry (roughly 24 hours)
                 date_str = item['dt_txt'].split()[0]
-                if date_str not in seen_dates and len(result['forecast']) < 5:
-                    seen_dates.add(date_str)
+                if date_str not in seen_dates_backup and len(result['forecast']) < 5:
+                    # Still get max temp for this day
+                    day_temps = [
+                        reading['main']['temp'] 
+                        for reading in forecast_data['list'] 
+                        if reading['dt_txt'].startswith(date_str)
+                    ]
+                    max_temp = max(day_temps) if day_temps else item['main']['temp']
+                    
+                    seen_dates_backup.add(date_str)
                     result['forecast'].append({
                         'date': date_str,
-                        'temp': round(item['main']['temp'], 1),
+                        'temp': round(max_temp, 1),
                         'description': item['weather'][0]['description'].capitalize(),
                         'icon': item['weather'][0]['icon']
                     })
@@ -158,7 +182,6 @@ def get_weather(location: str = None) -> Dict[str, Any]:
             'timestamp': datetime.now().isoformat(),
             'source': 'OpenWeather API (failed)'
         }
-
 
 def get_weather_icon_emoji(icon_code: str) -> str:
     """

@@ -93,7 +93,7 @@ def get_tech_news(topics: List[str] = None, limit: int = 5) -> Dict[str, Any]:
 
 def _fetch_real_news(api_key: str, topics: List[str], limit: int) -> Dict[str, Any]:
     """
-    Fetch real news from News API
+    Fetch real news from News API with quality filtering
     
     Args:
         api_key: News API key
@@ -113,7 +113,7 @@ def _fetch_real_news(api_key: str, topics: List[str], limit: int) -> Dict[str, A
         'q': query,
         'language': 'en',
         'sortBy': 'publishedAt',
-        'pageSize': limit,
+        'pageSize': limit * 3,  # Get 3x articles for filtering
         'apiKey': api_key
     }
     
@@ -122,28 +122,54 @@ def _fetch_real_news(api_key: str, topics: List[str], limit: int) -> Dict[str, A
     
     data = response.json()
     
+    # Low-quality sources to filter out
+    blocked_sources = ['Pypi.org', 'Github.com', 'Removed.com']
+    
     articles = []
-    for article in data.get('articles', [])[:limit]:
-        # Extract clean summary (description or first 200 chars of content)
+    for article in data.get('articles', []):
+        source_name = article.get('source', {}).get('name', 'Unknown')
+        title = article.get('title', 'No title')
+        
+        # Skip blocked sources
+        if source_name in blocked_sources:
+            continue
+        
+        # Skip if title is too short (likely package releases)
+        if len(title) < 20:
+            continue
+        
+        # Skip if title looks like a version number (e.g., "veriskgo 22.0.4")
+        first_word = title.split()[0] if title.split() else ''
+        if any(char.isdigit() for char in first_word) and '.' in title[:20]:
+            continue
+        
+        # Skip if title is "[Removed]" (deleted articles)
+        if '[Removed]' in title or title.startswith('Removed'):
+            continue
+        
+        # Extract clean summary
         summary = article.get('description') or ''
         if not summary and article.get('content'):
             summary = article.get('content', '')[:200].strip()
         
         articles.append({
-            'title': article.get('title', 'No title'),
+            'title': title,
             'summary': summary,
-            'source': article.get('source', {}).get('name', 'Unknown'),
+            'source': source_name,
             'url': article.get('url', '#'),
             'published_at': article.get('publishedAt', datetime.now().isoformat()),
             'category': 'technology'
         })
+        
+        # Stop when we have enough quality articles
+        if len(articles) >= limit:
+            break
     
     return {
         'articles': articles,
         'timestamp': datetime.now().isoformat(),
         'source': 'News API'
     }
-
 
 def _generate_mock_articles(topics: List[str], limit: int) -> List[Dict[str, Any]]:
     """

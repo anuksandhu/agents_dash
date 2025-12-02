@@ -462,15 +462,25 @@ def _render_weather_card(data: dict) -> str:
 
 def _render_sports_card(data: dict) -> str:
     teams = data.get('teams', [])
+    source = data.get('source', '')
+    
+    # Check if using mock data
+    is_mock = 'Mock' in source
+    disclaimer = """
+    <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin-bottom: 16px; border-radius: 4px;">
+        <strong>⚠️ Sample Data</strong><br>
+        <span style="font-size: 0.9em; color: #856404;">This is sample data for demonstration. Enable Sports API for real scores.</span>
+    </div>
+    """ if is_mock else ''
     
     teams_html = ""
     for team in teams:
         teams_html += f"""
         <div class="item">
-            <strong>{team.get('name', 'Unknown')}</strong> ({team.get('league', '')})<br>
-            Record: {team.get('record', 'N/A')}<br>
-            Latest: {team.get('latest_game', 'No recent games')}<br>
-            Next: {team.get('next_game', 'No upcoming games')}
+            <strong>{team.get('name', 'Unknown')}</strong> ({team.get('league', 'N/A')})<br>
+            Record: {team.get('record', 'N/A')} • {team.get('standings', 'N/A')}<br>
+            <small>Latest: {team.get('latest_game', 'N/A')}</small><br>
+            <small>Next: {team.get('next_game', 'N/A')}</small>
         </div>
         """
     
@@ -478,32 +488,53 @@ def _render_sports_card(data: dict) -> str:
     <div class="card">
         <h2 class="card-title">🏈 Sports</h2>
         <div class="card-content">
+            {disclaimer}
             {teams_html if teams_html else '<p>No sports data available</p>'}
         </div>
     </div>
     """
 
-
 def _render_tech_card(data: dict) -> str:
     articles = data.get('articles', [])
+    source_name = data.get('source', 'Unknown source')
     
     articles_html = ""
     for article in articles[:5]:
+        title = article.get('title', 'No title')
+        url = article.get('url', '#')
+        source = article.get('source', 'Unknown source')
+        published = article.get('published_at', '')[:10]
+        summary = article.get('summary', '')[:100]  # First 100 chars
+        
+        # Make title clickable if URL is valid (not mock data)
+        if url and url != '#' and not url.startswith('https://example.com'):
+            title_html = f'<a href="{url}" target="_blank" rel="noopener noreferrer" style="color: #667eea; text-decoration: none; font-weight: 600;">{title} →</a>'
+        else:
+            title_html = f'<strong>{title}</strong>'
+        
+        # Add summary if available
+        summary_html = f'<br><span style="color: #666; font-size: 0.9em;">{summary}...</span>' if summary else ''
+        
         articles_html += f"""
         <div class="item">
-            <strong>{article.get('title', 'No title')}</strong><br>
-            <small>{article.get('source', 'Unknown source')} • {article.get('published_at', '')[:10]}</small>
+            {title_html}{summary_html}<br>
+            <small style="color: #888;">{source} • {published}</small>
         </div>
         """
+    
+    # Add source attribution
+    source_footer = f'<p style="margin-top: 16px; font-size: 0.9em; color: #888;">Data from: {source_name}</p>'
     
     return f"""
     <div class="card">
         <h2 class="card-title">💻 Tech News</h2>
         <div class="card-content">
             {articles_html if articles_html else '<p>No tech news available</p>'}
+            {source_footer}
         </div>
     </div>
     """
+
 
 
 def _render_market_card(data: dict) -> str:
