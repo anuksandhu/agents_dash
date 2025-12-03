@@ -121,6 +121,7 @@ def _fetch_real_news(api_key: str, topics: List[str], limit: int) -> Dict[str, A
     response.raise_for_status()
     
     data = response.json()
+    logger.info(f"Available sources from API: {[article.get('source', {}).get('name') for article in data.get('articles', [])[:10]]}")
     
     # High-quality tech news sources (whitelist)
     allowed_sources = [
