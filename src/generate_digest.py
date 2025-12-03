@@ -252,6 +252,12 @@ async def generate_digest():
         json_text = json_text.replace(":true,", ":true,").replace(":false,", ":false,")
         json_text = json_text.replace(":true}", ":true}").replace(":false}", ":false}")
 
+        # Fix Python booleans to JSON booleans (CRITICAL: case-sensitive)
+        json_text = json_text.replace(": True,", ": true,").replace(": False,", ": false,")
+        json_text = json_text.replace(": True}", ": true}").replace(": False}", ": false}")
+        json_text = json_text.replace(":True,", ":true,").replace(":False,", ":false,")
+        json_text = json_text.replace(":True}", ":true}").replace(":False}", ":false}")
+
         # Handle escaped characters that break JSON parsing
         # Replace problematic escape sequences
         json_text = json_text.replace("\\n", "\\n")  # Keep newlines
