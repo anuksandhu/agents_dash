@@ -1,55 +1,55 @@
 {
   "date": "2025-12-03",
-  "generated_at": "2025-12-03T06:56:11.140000",
+  "generated_at": "2025-12-03T14:22:45.000000",
   "sections": [
     {
       "name": "weather",
       "data": {
         "current": {
-          "description": "Overcast clouds",
-          "feels_like": 46.9,
-          "humidity": 87,
-          "icon": "04n",
-          "temp": 47.9,
-          "wind_speed": 3.4
+          "description": "Clear sky",
+          "feels_like": 43.3,
+          "humidity": 78,
+          "icon": "01n",
+          "temp": 46.7,
+          "wind_speed": 6.9
         },
         "forecast": [
           {
             "date": "2025-12-03",
-            "description": "Broken clouds",
-            "icon": "04n",
-            "temp": 58.8
+            "description": "Clear sky",
+            "icon": "01n",
+            "temp": 54.9
           },
           {
             "date": "2025-12-04",
             "description": "Overcast clouds",
             "icon": "04n",
-            "temp": 62.9
+            "temp": 62.8
           },
           {
             "date": "2025-12-05",
             "description": "Clear sky",
             "icon": "01n",
-            "temp": 64.4
+            "temp": 64.1
           },
           {
             "date": "2025-12-06",
-            "description": "Few clouds",
-            "icon": "02n",
-            "temp": 64.7
+            "description": "Clear sky",
+            "icon": "01n",
+            "temp": 65.5
           },
           {
             "date": "2025-12-07",
             "description": "Overcast clouds",
             "icon": "04n",
-            "temp": 65.7
+            "temp": 62.7
           }
         ],
         "location": "San Jose",
         "source": "OpenWeather API",
-        "timestamp": "2025-12-03T06:56:09.802451"
+        "timestamp": "2025-12-03T14:22:43.961715"
       },
-      "timestamp": "2025-12-03T06:56:09.802451",
+      "timestamp": "2025-12-03T14:22:43.961715",
       "source": "OpenWeather API"
     },
     {
@@ -58,34 +58,34 @@
         "source": "Mock Sports Data (replace with The Sports DB or ESPN API)",
         "teams": [
           {
-            "latest_game": "W 33-24 vs Packers (2025-11-30)",
+            "latest_game": "W 22-17 vs Packers (2025-11-30)",
             "league": "NFL",
             "name": "San Francisco 49ers",
-            "next_game": "vs Seahawks on 2025-12-06",
-            "record": "15-4",
-            "standings": "#5 in division"
+            "next_game": "vs Seahawks on 2025-12-04",
+            "record": "11-9",
+            "standings": "#6 in division"
           },
           {
-            "latest_game": "W 25-16 vs Canucks (2025-12-01)",
+            "latest_game": "W 23-20 vs Golden Knights (2025-11-30)",
             "league": "NHL",
             "name": "San Jose Sharks",
-            "next_game": "vs Ducks on 2025-12-07",
-            "record": "8-10",
-            "standings": "#3 in division"
+            "next_game": "vs Golden Knights on 2025-12-08",
+            "record": "8-11",
+            "standings": "#1 in division"
           },
           {
-            "latest_game": "W 115-109 vs Suns (2025-12-02)",
+            "latest_game": "W 110-95 vs Blazers (2025-12-02)",
             "league": "NBA",
             "name": "Golden State Warriors",
-            "next_game": "vs Lakers on 2025-12-05",
-            "record": "15-5",
-            "standings": "#6 in division"
+            "next_game": "vs Kings on 2025-12-05",
+            "record": "9-12",
+            "standings": "#2 in division"
           }
         ],
-        "timestamp": "2025-12-03T06:56:09.806067"
+        "timestamp": "2025-12-03T14:22:43.963801"
       },
-      "timestamp": "2025-12-03T06:56:09.806067",
-      "source": "Mock Sports Data"
+      "timestamp": "2025-12-03T14:22:43.963801",
+      "source": "Mock Sports Data (replace with The Sports DB or ESPN API)"
     },
     {
       "name": "tech",
@@ -93,50 +93,50 @@
         "articles": [
           {
             "category": "technology",
+            "published_at": "2025-12-03T14:00:00Z",
+            "source": "TechCrunch",
+            "summary": "And the Palo Alto-based startup has raised $7.4 million to do that.",
+            "title": "Autolane is building \u2018air traffic control\u2019 for autonomous vehicles",
+            "url": "https://techcrunch.com/2025/12/03/autolane-is-building-air-traffic-control-for-autonomous-vehicles/"
+          },
+          {
+            "category": "technology",
+            "published_at": "2025-12-03T12:54:15Z",
+            "source": "TechCrunch",
+            "summary": "The new round, which opens on December 10, will enable consumers to buy the company\\'s shares at its Series C valuation of $1.3 billion.",
+            "title": "Nothing looks to its community to raise $5M, wants to be \u2018IPO-ready\u2019 in 3 years",
+            "url": "https://techcrunch.com/2025/12/03/nothing-looks-to-its-community-to-raise-5m-wants-to-be-ipo-ready-in-3-years/"
+          },
+          {
+            "category": "technology",
+            "published_at": "2025-12-03T12:11:44Z",
+            "source": "TechCrunch",
+            "summary": "On Wednesday, the Indian telecom ministry said Sanchar Saathi, an anti-theft and cybersecurity protection app, would remain voluntary, and that smartphone makers would no longer be required to preload",
+            "title": "After intense backlash, India pulls mandate to pre-install government app on smartphones",
+            "url": "https://techcrunch.com/2025/12/03/after-intense-backlash-india-pulls-mandate-to-pre-install-government-app-on-smartphones/"
+          },
+          {
+            "category": "technology",
+            "published_at": "2025-12-03T07:00:00Z",
+            "source": "TechCrunch",
+            "summary": "Healtify is adding live conversation capabilities to its AI assistant, powered by OpenAI\\'s realtime APIs",
+            "title": "Healthify upgrades its AI assistant Ria with real-time conversation capabilities",
+            "url": "https://techcrunch.com/2025/12/02/healthify-upgrades-its-ai-assistant-ria-with-real-time-conversation-capabilities/"
+          },
+          {
+            "category": "technology",
             "published_at": "2025-12-03T01:06:25Z",
             "source": "TechCrunch",
             "summary": "Amazon Web Services giant tech conference is happening this week with news ranging from chips to AI services.",
-            "title": "All the biggest news from AWS re:Invent 2025",
+            "title": "All the biggest news from AWS\u2019 big tech show re:Invent 2025",
             "url": "https://techcrunch.com/2025/12/02/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-03T00:43:37Z",
-            "source": "TechCrunch",
-            "summary": "If the product name sounds familiar, it should. It's a collab with Nvidia that combines AWS tech with the chip maker's tech.",
-            "title": "Amazon challenges competitors with on-premises Nvidia \u2018AI Factories\u2019",
-            "url": "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories/"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T22:30:42Z",
-            "source": "TechCrunch",
-            "summary": "The latest funding comes less than two months after Kalshi announced that it raised $300 million at a $5 billion valuation.",
-            "title": "Kalshi raises $1B at $11B valuation, doubling value in under two months",
-            "url": "https://techcrunch.com/2025/12/02/kalshi-raises-1b-at-11b-valuation-doubling-value-in-under-two-months/"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T22:26:34Z",
-            "source": "TechCrunch",
-            "summary": "Google is testing how to make it easier to move from search to an AI chat in a new global test.",
-            "title": "Google tests merging AI Overviews with AI Mode",
-            "url": "https://techcrunch.com/2025/12/02/google-tests-merging-ai-overviews-with-ai-mode/"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T22:18:01Z",
-            "source": "TechCrunch",
-            "summary": "Amazon Web Services on Tuesday announced three new AI agents it calls \"Frontier agents\" for coding, security, and DevOps.",
-            "title": "Amazon previews 3 AI agents, including \u2018Kiro\u2019 that can code on its own for days",
-            "url": "https://techcrunch.com/2025/12/02/amazon-previews-3-ai-agents-including-kiro-that-can-code-on-its-own-for-days/"
           }
         ],
         "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)",
-        "timestamp": "2025-12-03T06:56:10.629228"
+        "timestamp": "2025-12-03T14:22:44.216728"
       },
-      "timestamp": "2025-12-03T06:56:10.629228",
-      "source": "RSS Feeds"
+      "timestamp": "2025-12-03T14:22:44.216728",
+      "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)"
     },
     {
       "name": "market",
@@ -169,10 +169,10 @@
         ],
         "market_summary": "Markets rallied across all major indexes on positive sentiment.",
         "source": "Alpha Vantage API (via ETF proxies)",
-        "timestamp": "2025-12-03T06:56:11.136904"
+        "timestamp": "2025-12-03T14:22:44.675130"
       },
-      "timestamp": "2025-12-03T06:56:11.136904",
-      "source": "Alpha Vantage API"
+      "timestamp": "2025-12-03T14:22:44.675130",
+      "source": "Alpha Vantage API (via ETF proxies)"
     }
   ]
 }
