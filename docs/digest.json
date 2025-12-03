@@ -1,23 +1,23 @@
 {
   "date": "2025-12-03",
-  "generated_at": "2025-12-03T05:18:14.929129",
+  "generated_at": "2025-12-03T05:41:59.326415",
   "sections": [
     {
       "name": "weather",
       "data": {
         "current": {
-          "description": "Clear sky",
-          "feels_like": 48.2,
+          "description": "Few clouds",
+          "feels_like": 48.8,
           "humidity": 86,
-          "icon": "01n",
-          "temp": 49.8,
-          "wind_speed": 4.6
+          "icon": "02n",
+          "temp": 49.6,
+          "wind_speed": 3.4
         },
         "forecast": [
           {
             "date": "2025-12-03",
-            "description": "Scattered clouds",
-            "icon": "03n",
+            "description": "Broken clouds",
+            "icon": "04n",
             "temp": 59.6
           },
           {
@@ -47,9 +47,9 @@
         ],
         "location": "San Jose",
         "source": "OpenWeather API",
-        "timestamp": "2025-12-03T05:18:14.054965"
+        "timestamp": "2025-12-03T05:41:58.469550"
       },
-      "timestamp": "2025-12-03T05:18:14.054965",
+      "timestamp": "2025-12-03T05:41:58.469550",
       "source": "OpenWeather API"
     },
     {
@@ -58,84 +58,43 @@
         "source": "Mock Sports Data (replace with The Sports DB or ESPN API)",
         "teams": [
           {
-            "latest_game": "L 18-24 vs Cowboys (2025-12-01)",
+            "latest_game": "W 29-15 vs Packers (2025-11-30)",
             "league": "NFL",
             "name": "San Francisco 49ers",
-            "next_game": "vs Cowboys on 2025-12-04",
-            "record": "15-9",
-            "standings": "#7 in division"
-          },
-          {
-            "latest_game": "W 34-14 vs Canucks (2025-12-02)",
-            "league": "NHL",
-            "name": "San Jose Sharks",
-            "next_game": "vs Avalanche on 2025-12-06",
-            "record": "6-10",
+            "next_game": "vs Cardinals on 2025-12-05",
+            "record": "12-7",
             "standings": "#3 in division"
           },
           {
-            "latest_game": "W 106-103 vs Blazers (2025-12-02)",
+            "latest_game": "L 18-26 vs Golden Knights (2025-12-01)",
+            "league": "NHL",
+            "name": "San Jose Sharks",
+            "next_game": "vs Ducks on 2025-12-04",
+            "record": "8-7",
+            "standings": "#1 in division"
+          },
+          {
+            "latest_game": "L 94-103 vs Suns (2025-12-02)",
             "league": "NBA",
             "name": "Golden State Warriors",
-            "next_game": "vs Suns on 2025-12-06",
-            "record": "8-9",
+            "next_game": "vs Blazers on 2025-12-08",
+            "record": "11-6",
             "standings": "#5 in division"
           }
         ],
-        "timestamp": "2025-12-03T05:18:14.057890"
+        "timestamp": "2025-12-03T05:41:58.472273"
       },
-      "timestamp": "2025-12-03T05:18:14.057890",
+      "timestamp": "2025-12-03T05:41:58.472273",
       "source": "Mock Sports Data (replace with The Sports DB or ESPN API)"
     },
     {
       "name": "tech",
       "data": {
-        "articles": [
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T05:17:34Z",
-            "source": "BusinessLine",
-            "summary": "IT services company Wipro\\'s $375-million acquisition of HARMAN\\'s Digital Transformation Solutions (DTS) business unit has been completed following regulatory nods, according to a release on Tuesday.",
-            "title": "Wipro completes $375 million acquisition of Harman\u2019s DTS unit",
-            "url": "https://www.thehindubusinessline.com/companies/wipro-completes-375-million-acquisition-of-harmans-dts-unit/article70348079.ece"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T05:17:25Z",
-            "source": "The Times of India",
-            "summary": "Proprietary trading firms are offering lucrative packages exceeding Rs 2.8 crore to IIT students for Amsterdam-based roles. Top IITs saw strong campus placements on Day 1, with recruiters like Amazon, Qualcomm, and Nvidia offering substantial compensation. Al\u2026",
-            "title": "Trading, investment platforms line up at IITs, with many pay cheques over Rs 2.5 crore",
-            "url": "https://economictimes.indiatimes.com/jobs/fresher/trading-investment-platforms-line-up-at-iits-with-many-pay-cheques-over-rs-2-5-crore/articleshow/125710051.cms"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T05:16:39Z",
-            "source": "New Zealand Herald",
-            "summary": "The S&P/NZX 50 Index closed at 13,502.77, up 54.28 points or 0.4%.",
-            "title": "NZ sharemarket up despite crypto concerns - Market close",
-            "url": "https://www.nzherald.co.nz/business/markets/shares/nz-sharemarket-up-despite-crypto-concerns-market-close/premium/5YKPHWQUSJEDVCNGN7USMXVHO4/"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T05:13:00Z",
-            "source": "Slashdot.org",
-            "summary": "At an event in Seoul on Tuesday, Samsung unveiled the Galaxy Z TriFold, a dual-hinged smartphone that unfolds into a 10-inch tablet (source paywalled; alternative source). It launches on Dec. 12 in Korea for about $2,450. It plans to sell the phone in the US,\u2026",
-            "title": "Samsung Debuts Its First Trifold Phone",
-            "url": "https://mobile.slashdot.org/story/25/12/02/0511211/samsung-debuts-its-first-trifold-phone"
-          },
-          {
-            "category": "technology",
-            "published_at": "2025-12-02T05:10:46Z",
-            "source": "Al Jazeera English",
-            "summary": "PM Modi said he wants those who can\\'t afford shoes to be able to fly. But shrinking competition is killing that hope.",
-            "title": "India\u2019s sky-high fares crash dreams to make flying accessible to all",
-            "url": "https://www.aljazeera.com/features/2025/12/2/indias-sky-high-fares-crash-dreams-to-make-flying-accessible-to-all"
-          }
-        ],
+        "articles": [],
         "source": "News API",
-        "timestamp": "2025-12-03T05:18:14.422395"
+        "timestamp": "2025-12-03T05:41:58.841189"
       },
-      "timestamp": "2025-12-03T05:18:14.422395",
+      "timestamp": "2025-12-03T05:41:58.841189",
       "source": "News API"
     },
     {
@@ -169,9 +128,9 @@
         ],
         "market_summary": "Markets rallied across all major indexes on positive sentiment.",
         "source": "Alpha Vantage API (via ETF proxies)",
-        "timestamp": "2025-12-03T05:18:14.927962"
+        "timestamp": "2025-12-03T05:41:59.325961"
       },
-      "timestamp": "2025-12-03T05:18:14.927962",
+      "timestamp": "2025-12-03T05:41:59.325961",
       "source": "Alpha Vantage API (via ETF proxies)"
     }
   ]
