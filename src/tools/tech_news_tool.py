@@ -15,7 +15,6 @@ from utils.metrics import get_metrics
 logger = get_logger()
 metrics = get_metrics()
 
-
 def get_tech_news(topics: List[str] = None, limit: int = 5) -> Dict[str, Any]:
     """
     Fetches recent technology news articles from premium tech sources via RSS feeds.
@@ -40,39 +39,7 @@ def get_tech_news(topics: List[str] = None, limit: int = 5) -> Dict[str, Any]:
         >>> news = get_tech_news(["AI", "ChatGPT"], limit=3)
         >>> print(news['articles'][0]['title'])
     """
-    config = get_config()
-    
-    # Use provided topics or defaults
-    if topics is None:
-        topics = config.tech_topics
-    
-    logger.info("Fetching tech news", topics=topics, limit=limit)
-    metrics.start_timer("tool.get_tech_news")
-    
-    try:
-        # Use real News API if key is available
-        if config.news_api_key:
-            logger.info("Using News API for real data")
-            result = _fetch_real_news(config.news_api_key, topics, limit)
-        else:
-            logger.warning("No News API key - using mock data")
-            result = {
-                'articles': _generate_mock_articles(topics, limit),
-                'timestamp': datetime.now().isoformat(),
-                'source': 'Mock News Data (add NEWS_API_KEY for real data)'
-            }
-        
-        duration = metrics.stop_timer("tool.get_tech_news", {"tool": "get_tech_news", "type": "tool"})
-        logger.info(
-            "Tech news fetched successfully",
-            topics=topics,
-            article_count=len(result['articles']),
-            duration_ms=duration
-        )
-        
-        return result
-    
-    def get_tech_news(topics: List[str] = None, limit: int = 5) -> Dict[str, Any]:
+
     config = get_config()
     
     if topics is None:
