@@ -1,61 +1,60 @@
 {
-  "date": "2025-12-03",
-  "generated_at": "2025-12-03T19:08:57.231916",
+  "date": "2025-12-04",
+  "generated_at": "2025-12-04T14:23:10.123456",
   "sections": [
     {
       "name": "weather",
       "data": {
         "current": {
           "description": "Broken clouds",
-          "feels_like": 55.5,
-          "humidity": 46,
-          "icon": "04d",
-          "temp": 57.9,
-          "wind_speed": 9.2
+          "feels_like": 47.3,
+          "humidity": 63,
+          "icon": "04n",
+          "temp": 47.3,
+          "wind_speed": 2
         },
         "forecast": [
-          {
-            "date": "2025-12-03",
-            "description": "Broken clouds",
-            "icon": "04d",
-            "temp": 58.5
-          },
           {
             "date": "2025-12-04",
             "description": "Overcast clouds",
             "icon": "04n",
-            "temp": 62.9
+            "temp": 56.9
           },
           {
             "date": "2025-12-05",
             "description": "Clear sky",
             "icon": "01n",
-            "temp": 63.8
+            "temp": 64.1
           },
           {
             "date": "2025-12-06",
-            "description": "Clear sky",
-            "icon": "01n",
-            "temp": 65.5
+            "description": "Few clouds",
+            "icon": "02n",
+            "temp": 64.4
           },
           {
             "date": "2025-12-07",
             "description": "Scattered clouds",
             "icon": "03n",
-            "temp": 65.5
+            "temp": 64.9
+          },
+          {
+            "date": "2025-12-08",
+            "description": "Clear sky",
+            "icon": "01n",
+            "temp": 66.3
           }
         ],
         "location": "San Jose",
         "source": "OpenWeather API",
-        "timestamp": "2025-12-03T19:08:53.113512"
+        "timestamp": "2025-12-04T14:23:06.703434"
       },
-      "timestamp": "2025-12-03T19:08:53.113512",
+      "timestamp": "2025-12-04T14:23:06.703434",
       "source": "OpenWeather API"
     },
     {
       "name": "sports",
       "data": {
-        "source": "The Sports DB API",
         "teams": [
           {
             "latest_game": "W 20-9 vs Panthers (2025-11-25)",
@@ -74,17 +73,18 @@
             "standings": "N/A"
           },
           {
-            "latest_game": "W 104-96 vs Pelicans (2025-11-30)",
+            "latest_game": "L 112-124 vs Thunder (2025-12-03)",
             "league": "NBA",
             "name": "Golden State Warriors",
-            "next_game": "vs Thunder on 2025-12-03",
+            "next_game": "@ 76ers on 2025-12-05",
             "record": "Season in progress",
             "standings": "N/A"
           }
         ],
-        "timestamp": "2025-12-03T19:08:55.160677"
+        "timestamp": "2025-12-04T14:23:08.529120",
+        "source": "The Sports DB API"
       },
-      "timestamp": "2025-12-03T19:08:55.160677",
+      "timestamp": "2025-12-04T14:23:08.529120",
       "source": "The Sports DB API"
     },
     {
@@ -93,49 +93,49 @@
         "articles": [
           {
             "category": "technology",
-            "published_at": "2025-12-03T18:55:02Z",
+            "published_at": "2025-12-04T14:22:03Z",
             "source": "TechCrunch",
-            "summary": "Marquis said ransomware hackers stole reams of banking customer data, containing personal information and financial records, as well as Social Security numbers, belonging to hundreds of thousands of p",
-            "title": "Fintech firm Marquis alerts dozens of US banks and credit unions of a data breach after ransomware attack",
-            "url": "https://techcrunch.com/2025/12/03/fintech-firm-marquis-alerts-dozens-of-us-banks-and-credit-unions-of-a-data-breach-after-ransomware-attack/"
+            "summary": "AI research lab Anthropic inked a $200 million deal with Snowflake to bring its AI models to Snowflake\\'s 12,600 customers.",
+            "title": "Anthropic signs $200M deal to bring its LLMs to Snowflake\u2019s customers",
+            "url": "https://techcrunch.com/2025/12/04/anthropic-signs-200m-deal-to-bring-its-llms-to-snowflakes-customers/"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-03T19:01:06Z",
+            "published_at": "2025-12-04T14:11:16Z",
             "source": "The Verge",
-            "summary": "Micron is retiring the Crucial brand, marking the end of its line of budget-friendly solid-state drives (SSDs) and RAM kits, as reported earlier by VideoCardz. In an announcement on Wednesday, Micron ",
-            "title": "Crucial is shutting down \u2014 because Micron wants to sell its RAM and SSDs to AI companies instead",
-            "url": "https://www.theverge.com/news/837594/crucial-ram-ssd-micron-ai"
+            "summary": "Nvidia launched its first RTX 50-series graphics cards earlier this year without support for PhysX, the GPU-accelerated technology that let games realistically simulate shattering glass, moving liquid",
+            "title": "Nvidia\u2019s new RTX 50-series GPU driver restores PhysX support for popular games",
+            "url": "https://www.theverge.com/news/838043/nvidia-rtx-50-series-physx-support-driver"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-03T18:24:06Z",
+            "published_at": "2025-12-04T12:00:42Z",
             "source": "Ars Technica",
-            "summary": "Report: Microsoft declared \"the era of AI agents\" in May, but enterprise customers aren't buying.",
-            "title": "Microsoft drops AI sales targets in half after salespeople miss their quotas",
-            "url": "https://arstechnica.com/ai/2025/12/microsoft-slashes-ai-sales-growth-targets-as-customers-resist-unproven-agents/"
+            "summary": "Shrinking AI for your phone is no simple matter.",
+            "title": "The NPU in your phone keeps improving\u2014why isn\u2019t that making AI better?",
+            "url": "https://arstechnica.com/gadgets/2025/12/the-npu-in-your-phone-keeps-improving-why-isnt-that-making-ai-better/"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-03T19:00:00Z",
+            "published_at": "2025-12-04T13:00:00Z",
             "source": "Wired",
-            "summary": "The Chinese video game giant Tencent is now building some of the world\u2019s best 3D AI models. This could have implications far outside game design.",
-            "title": "An AI Dark Horse Is Rewriting the Rules of Game Design",
-            "url": "https://www.wired.com/story/tecent-3d-models-video-game-design-artificial-intelligence/"
+            "summary": "Zanskar uses AI to identify hidden geothermal systems\u2014and claims it has found one that could fuel a power plant, the first such discovery by industry in decades.",
+            "title": "A Startup Says It Has Found a Hidden Source of Geothermal Energy",
+            "url": "https://www.wired.com/story/startup-found-hidden-source-geothermal-energy/"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-03T18:01:39Z",
+            "published_at": "2025-12-04T14:00:00Z",
             "source": "MIT Technology Review",
-            "summary": "OpenAI is testing another new way to expose the complicated processes at work inside large language models. Researchers at the company can make an LLM produce what they call a confession, in which the",
-            "title": "OpenAI has trained its LLM to confess to bad behavior",
-            "url": "https://www.technologyreview.com/2025/12/03/1128740/openai-has-trained-its-llm-to-confess-to-bad-behavior/"
+            "summary": "Most organizations feel the imperative to keep pace with continuing advances in AI capabilities, as highlighted in a recent MIT Technology Review Insights report. That clearly has security implication",
+            "title": "Delivering securely on data and AI strategy",
+            "url": "https://www.technologyreview.com/2025/12/04/1128311/delivering-securely-on-data-and-ai-strategy/"
           }
         ],
-        "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)",
-        "timestamp": "2025-12-03T19:08:56.285291"
+        "timestamp": "2025-12-04T14:23:09.501202",
+        "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)"
       },
-      "timestamp": "2025-12-03T19:08:56.285291",
+      "timestamp": "2025-12-04T14:23:09.501202",
       "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)"
     },
     {
@@ -143,35 +143,35 @@
       "data": {
         "indexes": [
           {
-            "change": 12.6,
-            "change_percent": 0.19,
+            "change": 23.6,
+            "change_percent": 0.35,
             "is_positive": true,
             "name": "S&P 500",
             "symbol": "^GSPC",
-            "value": 6815.3
+            "value": 6838.9
           },
           {
-            "change": 183.54,
-            "change_percent": 0.78,
+            "change": 57.76,
+            "change_percent": 0.24,
             "is_positive": true,
             "name": "NASDAQ",
             "symbol": "^IXIC",
-            "value": 23636
+            "value": 23693.76
           },
           {
-            "change": 194,
-            "change_percent": 0.41,
+            "change": 415,
+            "change_percent": 0.87,
             "is_positive": true,
             "name": "DOW JONES",
             "symbol": "^DJI",
-            "value": 47526
+            "value": 47941
           }
         ],
         "market_summary": "Markets rallied across all major indexes on positive sentiment.",
-        "source": "Alpha Vantage API (via ETF proxies)",
-        "timestamp": "2025-12-03T19:08:56.722711"
+        "timestamp": "2025-12-04T14:23:09.912238",
+        "source": "Alpha Vantage API (via ETF proxies)"
       },
-      "timestamp": "2025-12-03T19:08:56.722711",
+      "timestamp": "2025-12-04T14:23:09.912238",
       "source": "Alpha Vantage API (via ETF proxies)"
     }
   ]
