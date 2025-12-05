@@ -1,60 +1,61 @@
 {
-  "date": "2025-12-04",
-  "generated_at": "2025-12-04T14:23:10.123456",
+  "date": "2025-12-05",
+  "generated_at": "2025-12-05T14:22:22.780799",
   "sections": [
     {
       "name": "weather",
       "data": {
         "current": {
-          "description": "Broken clouds",
-          "feels_like": 47.3,
-          "humidity": 63,
-          "icon": "04n",
-          "temp": 47.3,
+          "description": "Clear sky",
+          "feels_like": 48.6,
+          "humidity": 81,
+          "icon": "01n",
+          "temp": 48.6,
           "wind_speed": 2
         },
         "forecast": [
           {
-            "date": "2025-12-04",
-            "description": "Overcast clouds",
-            "icon": "04n",
-            "temp": 56.9
-          },
-          {
             "date": "2025-12-05",
             "description": "Clear sky",
             "icon": "01n",
-            "temp": 64.1
+            "temp": 53.6
           },
           {
             "date": "2025-12-06",
-            "description": "Few clouds",
-            "icon": "02n",
-            "temp": 64.4
+            "description": "Clear sky",
+            "icon": "01n",
+            "temp": 64.6
           },
           {
             "date": "2025-12-07",
-            "description": "Scattered clouds",
-            "icon": "03n",
-            "temp": 64.9
+            "description": "Few clouds",
+            "icon": "02n",
+            "temp": 64.7
           },
           {
             "date": "2025-12-08",
-            "description": "Clear sky",
-            "icon": "01n",
+            "description": "Few clouds",
+            "icon": "02n",
+            "temp": 65.2
+          },
+          {
+            "date": "2025-12-09",
+            "description": "Scattered clouds",
+            "icon": "03n",
             "temp": 66.3
           }
         ],
         "location": "San Jose",
         "source": "OpenWeather API",
-        "timestamp": "2025-12-04T14:23:06.703434"
+        "timestamp": "2025-12-05T14:22:18.649692"
       },
-      "timestamp": "2025-12-04T14:23:06.703434",
+      "timestamp": "2025-12-05T14:22:18.649692",
       "source": "OpenWeather API"
     },
     {
       "name": "sports",
       "data": {
+        "source": "The Sports DB API",
         "teams": [
           {
             "latest_game": "W 20-9 vs Panthers (2025-11-25)",
@@ -65,10 +66,10 @@
             "standings": "N/A"
           },
           {
-            "latest_game": "W 6-3 vs Mammoth (2025-12-02)",
+            "latest_game": "L 1-7 vs Capitals (2025-12-04)",
             "league": "NHL",
             "name": "San Jose Sharks",
-            "next_game": "vs Capitals on 2025-12-04",
+            "next_game": "@ Stars on 2025-12-06",
             "record": "Season in progress",
             "standings": "N/A"
           },
@@ -81,10 +82,9 @@
             "standings": "N/A"
           }
         ],
-        "timestamp": "2025-12-04T14:23:08.529120",
-        "source": "The Sports DB API"
+        "timestamp": "2025-12-05T14:22:20.683000"
       },
-      "timestamp": "2025-12-04T14:23:08.529120",
+      "timestamp": "2025-12-05T14:22:20.683000",
       "source": "The Sports DB API"
     },
     {
@@ -93,49 +93,49 @@
         "articles": [
           {
             "category": "technology",
-            "published_at": "2025-12-04T14:22:03Z",
+            "published_at": "2025-12-05T12:56:47Z",
             "source": "TechCrunch",
-            "summary": "AI research lab Anthropic inked a $200 million deal with Snowflake to bring its AI models to Snowflake\\'s 12,600 customers.",
-            "title": "Anthropic signs $200M deal to bring its LLMs to Snowflake\u2019s customers",
-            "url": "https://techcrunch.com/2025/12/04/anthropic-signs-200m-deal-to-bring-its-llms-to-snowflakes-customers/"
+            "summary": "\"You could really, in a very fundamental sense, talk about redrawing the border around a brain,\" Hodak says, \"possibly to include four hemispheres, or a device, or a whole group of people.\"",
+            "title": "After Neuralink, Max Hodak is building something stranger",
+            "url": "https://techcrunch.com/2025/12/05/after-neuralink-max-hodak-is-building-something-stranger/"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-04T14:11:16Z",
+            "published_at": "2025-12-05T13:45:35Z",
             "source": "The Verge",
-            "summary": "Nvidia launched its first RTX 50-series graphics cards earlier this year without support for PhysX, the GPU-accelerated technology that let games realistically simulate shattering glass, moving liquid",
-            "title": "Nvidia\u2019s new RTX 50-series GPU driver restores PhysX support for popular games",
-            "url": "https://www.theverge.com/news/838043/nvidia-rtx-50-series-physx-support-driver"
+            "summary": "The National Highway Traffic Safety Administration has opened an investigation into Waymo following reports that the company\u2019s robotaxis illegally drove past stopped school buses in Austin, Texas.&#16",
+            "title": "Waymo&#8217;s robotaxis are under investigation for passing stopped school buses",
+            "url": "https://www.theverge.com/news/838879/waymo-school-buses-probe"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-04T12:00:42Z",
+            "published_at": "2025-12-05T12:15:43Z",
             "source": "Ars Technica",
-            "summary": "Shrinking AI for your phone is no simple matter.",
-            "title": "The NPU in your phone keeps improving\u2014why isn\u2019t that making AI better?",
-            "url": "https://arstechnica.com/gadgets/2025/12/the-npu-in-your-phone-keeps-improving-why-isnt-that-making-ai-better/"
+            "summary": "Foundations of daily life are being pushed to the brink by human-caused warming.",
+            "title": "New report warns of critical climate risks in Arab region",
+            "url": "https://arstechnica.com/science/2025/12/new-report-warns-of-critical-climate-risks-in-arab-region/"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-04T13:00:00Z",
+            "published_at": "2025-12-05T12:00:00Z",
             "source": "Wired",
-            "summary": "Zanskar uses AI to identify hidden geothermal systems\u2014and claims it has found one that could fuel a power plant, the first such discovery by industry in decades.",
-            "title": "A Startup Says It Has Found a Hidden Source of Geothermal Energy",
-            "url": "https://www.wired.com/story/startup-found-hidden-source-geothermal-energy/"
+            "summary": "Reddit is considered one of the most human spaces left on the internet, but mods and users are overwhelmed with slop posts in the most popular subreddits.",
+            "title": "AI Slop Is Ruining Reddit for Everyone",
+            "url": "https://www.wired.com/story/ai-slop-is-ruining-reddit-for-everyone/"
           },
           {
             "category": "technology",
-            "published_at": "2025-12-04T14:00:00Z",
+            "published_at": "2025-12-05T13:10:00Z",
             "source": "MIT Technology Review",
-            "summary": "Most organizations feel the imperative to keep pace with continuing advances in AI capabilities, as highlighted in a recent MIT Technology Review Insights report. That clearly has security implication",
-            "title": "Delivering securely on data and AI strategy",
-            "url": "https://www.technologyreview.com/2025/12/04/1128311/delivering-securely-on-data-and-ai-strategy/"
+            "summary": "This is today&#8217;s edition of&#160;The Download,&#160;our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI chatbots can sway voters better than ",
+            "title": "The Download: political chatbot persuasion, and gene editing adverts",
+            "url": "https://www.technologyreview.com/2025/12/05/1128927/the-download-political-chatbot-persuasion-gene-editing-adverts/"
           }
         ],
-        "timestamp": "2025-12-04T14:23:09.501202",
-        "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)"
+        "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)",
+        "timestamp": "2025-12-05T14:22:21.673522"
       },
-      "timestamp": "2025-12-04T14:23:09.501202",
+      "timestamp": "2025-12-05T14:22:21.673522",
       "source": "RSS Feeds (TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat)"
     },
     {
@@ -143,35 +143,35 @@
       "data": {
         "indexes": [
           {
-            "change": 23.6,
-            "change_percent": 0.35,
+            "change": 5,
+            "change_percent": 0.07,
             "is_positive": true,
             "name": "S&P 500",
             "symbol": "^GSPC",
-            "value": 6838.9
+            "value": 6843.9
           },
           {
-            "change": 57.76,
-            "change_percent": 0.24,
-            "is_positive": true,
+            "change": -22.04,
+            "change_percent": -0.09,
+            "is_positive": false,
             "name": "NASDAQ",
             "symbol": "^IXIC",
-            "value": 23693.76
+            "value": 23671.72
           },
           {
-            "change": 415,
-            "change_percent": 0.87,
-            "is_positive": true,
+            "change": -34,
+            "change_percent": -0.07,
+            "is_positive": false,
             "name": "DOW JONES",
             "symbol": "^DJI",
-            "value": 47941
+            "value": 47907
           }
         ],
-        "market_summary": "Markets rallied across all major indexes on positive sentiment.",
-        "timestamp": "2025-12-04T14:23:09.912238",
-        "source": "Alpha Vantage API (via ETF proxies)"
+        "market_summary": "Mixed trading session with varied performance across indexes.",
+        "source": "Alpha Vantage API (via ETF proxies)",
+        "timestamp": "2025-12-05T14:22:22.080689"
       },
-      "timestamp": "2025-12-04T14:23:09.912238",
+      "timestamp": "2025-12-05T14:22:22.080689",
       "source": "Alpha Vantage API (via ETF proxies)"
     }
   ]
